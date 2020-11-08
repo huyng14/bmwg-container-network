@@ -1,0 +1,8 @@
+---
+install_dependencies:
+  Debian:
+    - build-essential
+    - linux-headers-{{ ansible_kernel }}
+  RedHat:
+    - gcc
+    - kernel-devel
