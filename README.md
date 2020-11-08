@@ -1,6 +1,9 @@
 # bmwg-container-network
 IETF hackathon 109<br/>
 *Contact: Huy Nguyen (huynq.ptit14@gmail.com)*
+
+## Physical Topology
+![Physical Topology.jpg](images/physical-topology.jpg)
 ## Hardware specification
 
 | Node Name | Specification  | Description |
