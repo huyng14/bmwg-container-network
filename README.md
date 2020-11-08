@@ -15,7 +15,7 @@ IETF hackathon 109<br/>
 ## Software components
 | Software Function | Software Component | Link
 | ------------- | ------------- | ------------- |
-| Host OS | - Master node:<br/> &nbsp;&nbsp;&nbsp;&nbsp; Ubuntu 16.04.7 LTS<br/> &nbsp;&nbsp;&nbsp;&nbsp; Kernel version 4.15.0-122<br/> - Worker node and traffic generator:<br/> &nbsp;&nbsp;&nbsp;&nbsp; CentOS 7.8.2003<br/> &nbsp;&nbsp;&nbsp;&nbsp; Kernel version 3.10.0-1127.19.1.el7.x86_64 | https://ubuntu.com/<br/> https://www.centos.org/ |
+| Host OS | - Master node:<br/> &nbsp;&nbsp;&nbsp;&nbsp; *- Ubuntu 16.04.7 LTS<br/> &nbsp;&nbsp;&nbsp;&nbsp; - Kernel version 4.15.0-122<br/>* - Worker node and traffic generator:<br/> &nbsp;&nbsp;&nbsp;&nbsp; *- CentOS 7.8.2003<br/> &nbsp;&nbsp;&nbsp;&nbsp; - Kernel version 3.10.0-1127.19.1.el7.x86_64* | https://ubuntu.com/<br/> https://www.centos.org/ |
 | Ansible | Ansible v2.7.16 | https://www.ansible.com/ |
 | BMRA ansible playbook | Kubernetes v1.16 branch | https://github.com/intel/container-experience-kits |
 | Python | Python 2.7 | https://www.python.org/ |
