@@ -1,0 +1,23 @@
+1) Trex 
+# creating Trex server	
+	./t-rex-64 -i -c 4
+# control Trex server
+	./trex-console
+# generating traffic with packet size 1518 in 20s
+	start -f stl/bench.py -t size=1518 -p 0 -m 100% --force -d 20
+	
+2) Testpmd container
+# mounting the hugepage to the container	
+	mkdir -p /dev/hugepages
+	mountpoint -q /dev/hugepages || mount -t hugetlbfs nodev /dev/hugepages
+# run testpmd 
+	testpmd --huge-dir=/dev/hugepages --file-prefix=huge --socket-mem=1024 -l 1,2 -w 0000:af:02.0 -w 0000:af:0a.1 -n 2 -- -i --txd=1024 --rxd=1024
+	
+# setting MAC address table
+	set eth-peer 0 40:a6:b7:19:f2:38
+	set eth-peer 1 40:a6:b7:19:f2:39
+	set fwd mac
+	show config fwd
+	start
+	
+	
