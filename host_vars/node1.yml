@@ -47,7 +47,7 @@ default_hugepage_size: 1G
 
 # Sets how many hugepages of each size should be created
 hugepages_1G: 4
-hugepages_2M: 12
+hugepages_2M: 0
 
 # CPU isolation from Linux scheduler
 isolcpus_enabled: true
